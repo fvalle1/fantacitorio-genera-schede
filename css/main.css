@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
 body {
-    background-color: rgb(240, 180, 80);
+    background-color: rgb(250, 181, 80);
 }
 
 .header {
@@ -72,19 +77,114 @@ body {
 
 .card {
     position: relative;
+    background-color: rgb(250, 181, 80);
     width: 80vw;
     height: 70vh;
     margin: auto;
     color: black;
     border-radius: 2.5vw;
     border:0.16em solid rgba(0,0,0,1);
+    /* background-image: url("/fantacitorio-twitter-2.jpeg"); */
+    background-size: cover;
+    z-index: 10;
 }
 
 .card .logo {
     position: absolute;
     top: 0;
-    left: 0;
-    height: 12vmin;
+    left: 3%;
+    height: 15vmin;
     width: auto;
     border-radius: 2.5vw 0 0 0;
+}
+
+.input {
+    position: relative;
+    height: 6vmin;
+    width: 40%;
+    left: 5%;
+    border-radius: 3vmin;
+    background-color: #FFF;
+    line-height: 6vmin;
+    font-size: 3.5vmin;
+    text-align: center;
+}
+
+.input input {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    font-size: inherit;
+    text-align: inherit;
+}
+
+.input-grid {
+    position: absolute;
+    top: 20vmin;
+    left: 5%;
+    width: 86%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24% 6%;
+}
+
+.input-grid > .input {
+    width: 100%;
+}
+
+.card > .input:first-of-type {
+    position: absolute;
+    top: 7vmin;
+    left: 60%;
+    width: 34%;
+    height: 7vmin;
+    line-height: 7vmin;
+    font-size: 6vmin;
+    text-align: center;
+}
+
+.card > .input:first-of-type::before {
+    content: 'LEADER';
+    position: absolute;
+    top: -6.5vmin;
+    left: 50%;
+    width: fit-content;
+    font-size: 3vmin;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.card > .input:last-of-type {
+    position: absolute;
+    bottom: 5vmin;
+    left: 65%;
+    width: 31.5%;
+    height: 6.5vmin;
+    line-height: 7vmin;
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.card > .input:last-of-type::before {
+    content: 'NOME SQUADRA';
+    position: absolute;
+    top: -6.5vmin;
+    left: 50%;
+    width: fit-content;
+    font-size: 3vmin;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.inputoutput, canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    visibility: hidden;
 }
