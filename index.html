@@ -13,49 +13,62 @@
     </div>
 
     <div class="card">
-        <img class="logo" src="logo.png">
-        <div class="input">
-            <input id="team_captain" type="text">
+        <div class="totale" id="totale">0</div>
+        <img class="logo" src="fantacitorio-propaganda-live.jpg">
+        <div class="capitano">
+            <input id="team_captain" type="text" list="giocatori">
         </div>
         <div class="input-grid">
             <div class="input">
-                <input id="team_member1" type="text">
+                <input id="team_member1" class="name-input" type="text" list="giocatori">
+                <input id="team_member1_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member2" type="text">
+                <input id="team_member2" class="name-input" type="text" list="giocatori">
+                <input id="team_member2_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member3" type="text">
+                <input id="team_member3" class="name-input" type="text" list="giocatori">
+                <input id="team_member3_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member4" type="text">
+                <input id="team_member4" class="name-input" type="text" list="giocatori">
+                <input id="team_member4_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member5" type="text">
+                <input id="team_member5" class="name-input" type="text" list="giocatori">
+                <input id="team_member5_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member6" type="text">
+                <input id="team_member6" class="name-input" type="text" list="giocatori">
+                <input id="team_member6_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member7" type="text">
+                <input id="team_member7" class="name-input" type="text" list="giocatori">
+                <input id="team_member7_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member8" type="text">
+                <input id="team_member8" class="name-input" type="text" list="giocatori">
+                <input id="team_member8_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member9" type="text">
+                <input id="team_member9" class="name-input" type="text" list="giocatori">
+                <input id="team_member9_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member10" type="text">
+                <input id="team_member10" class="name-input" type="text" list="giocatori">
+                <input id="team_member10_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member11" type="text">
+                <input id="team_member11" class="name-input" type="text" list="giocatori">
+                <input id="team_member11_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
         </div>
         <div class="input">
-            <input id="team_name" type="text">
+            <input id="team_name" type="text" list="giocatori">
         </div>
     </div>
+    
     <div class="footer">
         <div class="buttons">
             <button type="button" class="btn btn-primary" onClick="generate()">Genera scheda!</button>
@@ -73,56 +86,27 @@
         <canvas id="outputCanvas"></canvas>
     </div>
 
+    <datalist id="giocatori">
+    </datalist>
+
+    <datalist id="punteggi">
+        <option value="50">"Leader di partito o Presidente del Consiglio"</option>
+        <option value="30">"Ministra/Ministro"</option>
+        <option value="4">"Senatore"</option>
+        <option value="5">"Capogruppo al Senato"</option>
+        <option value="15">"Presidente del Senato"</option>
+        <option value="2">"Deputato"</option>
+        <option value="3">"Capogruppo alla Camera"</option>
+        <option value="10">"Presidente della Camera"</option>
+        <option value="20">"Presidente di Regione"</option>
+        <option value="20">"Sindaca/o di Capoluogo di Regione"</option>
+        <option value="10">"Altri sindaci"</option>
+    </datalist>
+
+    <script src="js/fanfani.js" type="text/javascript"></script>
     <script src="js/fantacitorio.js" type="text/javascript"></script>
-
-    <!-- <div style="padding-top:10px; text-align:center; width:90%; margin:auto">
-        <h2>Crea la tua scheda!</h2>
-        <p>Nome squadra</p>
-        <input id="team_name" type="text"></input>
-        <p>Leader</p>
-        <input id="team_captain" type="text"></input>
-        <div class="">
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <td><input id="team_member1" type="text"></input></td>
-                        <td><input id="team_member2" type="text"></input></td>
-                        <td><input id="team_member3" type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><input id="team_member4" type="text"></input></td>
-                        <td><input id="team_member5" type="text"></input></td>
-                        <td><input id="team_member6" type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><input id="team_member7" type="text"></input></td>
-                        <td><input id="team_member8" type="text"></input></td>
-                        <td><input id="team_member9" type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><input id="team_member10" type="text"></input></td>
-                        <td><input id="team_member11" type="text"></input></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="inputoutput">
-            <img width="100%" id="scheda" alt="Scheda" src="fantacitorio-twitter-2.jpeg" />
-            <canvas id="outputCanvas"></canvas>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" onClick="generate()">Genera scheda!</button>
-            <a id="download" download="tabella.png">
-                <button type="button" class="btn btn-secondary" onClick="download()">Download</button>
-            </a>
-        </div>
-        <div>
-            <p>Questo sito non è ufficiale ed è indipendente da La7.</p>
-        </div>
-        <script src="js/fantacitorio.js" type="text/javascript"></script>
-    </div> -->
-
+    <script src="js/lista_giocatori.js" type="text/javascript"></script>
+    <script src="js/giocatori.js" type="text/javascript"></script>
 </body>
 
 </html>
