@@ -25,11 +25,11 @@ generate = function () {
     cv.putText(mat, document.getElementById("team_name").value, new cv.Point(0.7 * w, 0.47 * h), cv.FONT_HERSHEY_SIMPLEX, 0.5, new cv.Scalar(0, 0, 0, 255), 2, cv.LINE_4);
 
     cv.imshow('outputCanvas', mat);
-    // imgElement.hidden = true;
     mat.delete();
 };
 
 function download() {
+    generate()
     var download = document.getElementById("download");
     var image = document.getElementById("outputCanvas").toDataURL("image/png")
         .replace("image/png", "image/octet-stream");

@@ -16,51 +16,52 @@
         <div class="totale" id="totale">0</div>
         <img class="logo" src="fantacitorio-propaganda-live.jpg">
         <div class="capitano">
-            <input id="team_captain" type="text" list="giocatori">
+            <input id="team_captain" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
+            <input id="team_captain_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
         </div>
         <div class="input-grid">
             <div class="input">
-                <input id="team_member1" class="name-input" type="text" list="giocatori">
+                <input id="team_member1" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member1_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member2" class="name-input" type="text" list="giocatori">
+                <input id="team_member2" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member2_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member3" class="name-input" type="text" list="giocatori">
+                <input id="team_member3" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member3_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member4" class="name-input" type="text" list="giocatori">
+                <input id="team_member4" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member4_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member5" class="name-input" type="text" list="giocatori">
+                <input id="team_member5" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member5_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member6" class="name-input" type="text" list="giocatori">
+                <input id="team_member6" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member6_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member7" class="name-input" type="text" list="giocatori">
+                <input id="team_member7" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member7_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member8" class="name-input" type="text" list="giocatori">
+                <input id="team_member8" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member8_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member9" class="name-input" type="text" list="giocatori">
+                <input id="team_member9" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member9_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member10" class="name-input" type="text" list="giocatori">
+                <input id="team_member10" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member10_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
             <div class="input">
-                <input id="team_member11" class="name-input" type="text" list="giocatori">
+                <input id="team_member11" class="name-input" type="text" list="giocatori" onchange="update_punteggi(this)">
                 <input id="team_member11_score" class="score-input" type="text" value="0" list="punteggi" onchange="fanfani()">
             </div>
         </div>
@@ -71,7 +72,7 @@
     
     <div class="footer">
         <div class="buttons">
-            <button type="button" class="btn btn-primary" onClick="generate()">Genera scheda!</button>
+            <!-- <button type="button" class="btn btn-primary" onClick="generate()">Genera scheda!</button> -->
             <a id="download" download="tabella.png">
                 <button type="button" class="btn btn-secondary" onClick="download()">Download</button>
             </a>
@@ -82,7 +83,7 @@
     </div>
 
     <div class="inputoutput">
-        <img width="100%" id="scheda" alt="Scheda" src="fantacitorio-twitter-2.jpeg" />
+        <img width="100%" id="scheda" alt="Scheda" src="fantacitorio-twitter-HD.png" />
         <canvas id="outputCanvas"></canvas>
     </div>
 
