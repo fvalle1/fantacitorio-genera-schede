@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: rgb(250, 181, 80);
+    background-color: rgb(210, 142, 47);
 }
 
 .header {
@@ -28,9 +28,9 @@ body {
 
 .footer {
     position: absolute;
-    bottom: 2vh;
-    left: 25vw;
-    width: 50vw;
+    top: 95vh;
+    left: 0;
+    width: 100vw;
     height: fit-content;
     color: black;
 }
@@ -77,9 +77,11 @@ body {
 
 .card {
     position: relative;
-    background-color: rgb(250, 181, 80);
+    background-image: url("/sfondo.png");
+    background-size: cover;
     width: 80vw;
     height: 70vh;
+    max-height: 100vw;
     margin: auto;
     color: black;
     border-radius: 2.5vw;
@@ -129,6 +131,13 @@ body {
     gap: 24% 6%;
 }
 
+@media (orientation: portrait) {
+    .input-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vh 5vw;
+    }
+}
+
 .input-grid > .input {
     width: 100%;
 }
@@ -150,7 +159,7 @@ body {
     top: -6.5vmin;
     left: 50%;
     width: fit-content;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     transform: translateX(-50%);
     font-weight: bold;
 }
@@ -172,7 +181,7 @@ body {
     top: -6.5vmin;
     left: 50%;
     width: fit-content;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
     transform: translateX(-50%);
     font-weight: bold;
 }

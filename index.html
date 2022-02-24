@@ -13,47 +13,47 @@
     </div>
 
     <div class="card">
-        <img class="logo" src="logo.png">
+        <img class="logo" src="fantacitorio-propaganda-live.jpg">
         <div class="input">
-            <input id="team_captain" type="text">
+            <input id="team_captain" type="text" list="giocatori">
         </div>
         <div class="input-grid">
             <div class="input">
-                <input id="team_member1" type="text">
+                <input id="team_member1" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member2" type="text">
+                <input id="team_member2" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member3" type="text">
+                <input id="team_member3" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member4" type="text">
+                <input id="team_member4" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member5" type="text">
+                <input id="team_member5" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member6" type="text">
+                <input id="team_member6" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member7" type="text">
+                <input id="team_member7" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member8" type="text">
+                <input id="team_member8" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member9" type="text">
+                <input id="team_member9" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member10" type="text">
+                <input id="team_member10" type="text" list="giocatori">
             </div>
             <div class="input">
-                <input id="team_member11" type="text">
+                <input id="team_member11" type="text" list="giocatori">
             </div>
         </div>
         <div class="input">
-            <input id="team_name" type="text">
+            <input id="team_name" type="text" list="giocatori">
         </div>
     </div>
     <div class="footer">
@@ -73,56 +73,12 @@
         <canvas id="outputCanvas"></canvas>
     </div>
 
+    <datalist id="giocatori">
+    </datalist>
+
     <script src="js/fantacitorio.js" type="text/javascript"></script>
-
-    <!-- <div style="padding-top:10px; text-align:center; width:90%; margin:auto">
-        <h2>Crea la tua scheda!</h2>
-        <p>Nome squadra</p>
-        <input id="team_name" type="text"></input>
-        <p>Leader</p>
-        <input id="team_captain" type="text"></input>
-        <div class="">
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <td><input id="team_member1" type="text"></input></td>
-                        <td><input id="team_member2" type="text"></input></td>
-                        <td><input id="team_member3" type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><input id="team_member4" type="text"></input></td>
-                        <td><input id="team_member5" type="text"></input></td>
-                        <td><input id="team_member6" type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><input id="team_member7" type="text"></input></td>
-                        <td><input id="team_member8" type="text"></input></td>
-                        <td><input id="team_member9" type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><input id="team_member10" type="text"></input></td>
-                        <td><input id="team_member11" type="text"></input></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="inputoutput">
-            <img width="100%" id="scheda" alt="Scheda" src="fantacitorio-twitter-2.jpeg" />
-            <canvas id="outputCanvas"></canvas>
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" onClick="generate()">Genera scheda!</button>
-            <a id="download" download="tabella.png">
-                <button type="button" class="btn btn-secondary" onClick="download()">Download</button>
-            </a>
-        </div>
-        <div>
-            <p>Questo sito non è ufficiale ed è indipendente da La7.</p>
-        </div>
-        <script src="js/fantacitorio.js" type="text/javascript"></script>
-    </div> -->
-
+    <script src="js/lista_giocatori.js" type="text/javascript"></script>
+    <script src="js/giocatori.js" type="text/javascript"></script>
 </body>
 
 </html>
