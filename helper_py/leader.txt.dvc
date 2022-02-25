@@ -1,0 +1,4 @@
+outs:
+- md5: fb3df7b2cb7b7adac5106b86d05ef825
+  size: 359
+  path: leader.txt
