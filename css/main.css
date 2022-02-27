@@ -77,7 +77,7 @@ body {
 
 .card {
     position: relative;
-    background-image: url("/sfondo.png");
+    background-image: url("../sfondo.png");
     background-size: cover;
     width: 80vw;
     height: 70vh;
